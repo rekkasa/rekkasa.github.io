@@ -37,6 +37,7 @@ for (i in seq_len(n)) {
   year <- ensure_char(entry$year)
   doi <- ensure_char(entry$doi)
   url <- ensure_char(entry$url)
+  abstract <- ensure_char(entry$abstract)
   key <- names(bib)[[i]]
 
   # Format authors
@@ -66,7 +67,8 @@ for (i in seq_len(n)) {
     journal = journal,
     year = year,
     doi = doi,
-    url = url
+    url = url,
+    abstract = abstract
   )
 }
 
@@ -146,6 +148,21 @@ for (yr in years) {
         )
       )
     }
+    if (nchar(row[["abstract"]]) > 0) {
+      abs_id <- stringr::str_c(
+        "abs-",
+        row[["key"]]
+      )
+      links_parts <- c(
+        links_parts,
+        stringr::str_c(
+          '<a class="badge" data-bs-toggle="collapse"',
+          ' href="#', abs_id, '"',
+          ' role="button" aria-expanded="false"',
+          ' aria-controls="', abs_id, '">Abs</a>'
+        )
+      )
+    }
 
     links_html <- if (length(links_parts) > 0) {
       stringr::str_c(
@@ -164,6 +181,19 @@ for (yr in years) {
       '  <div class="pub-authors">', authors_html, '</div>\n',
       '  <div class="pub-venue">', venue_html, '</div>\n',
       '  ', links_html, '\n',
+      sep = ""
+    )
+    if (nchar(row[["abstract"]]) > 0) {
+      cat(
+        '<div class="collapse" id="abs-', row[["key"]], '">\n',
+        '  <div class="pub-abstract">',
+        htmltools::htmlEscape(text = row[["abstract"]]),
+        '</div>\n',
+        '</div>\n',
+        sep = ""
+      )
+    }
+    cat(
       '</div>\n',
       sep = ""
     )

@@ -10,15 +10,18 @@ All content pages are standalone `.qmd` files. The site deploys to GitHub
 Pages via GitHub Actions.
 
 ```
-_quarto.yml          ← Site config, Bootstrap theme, sidebar, custom SCSS
-styles.scss           ← al-folio visual overrides
-about.qmd             ← Homepage (About)
-publications.bib      ← BibTeX bibliography (seeded from Google Scholar)
-publications.qmd      ← Publication cards rendered from BibTeX
-projects.qmd          ← Research project listings
-cv.qmd                ← English CV (HTML page)
-teaching.qmd          ← Teaching portfolio
-R/fetch_publications.R ← One-time Google Scholar scraper
+_quarto.yml             ← Site config, Bootstrap theme, sidebar, custom SCSS
+styles.scss              ← al-folio visual overrides
+_includes/sidebar.html   ← Sidebar HTML partial (profile, nav, social links)
+index.qmd                ← Homepage (About)
+publications.bib         ← BibTeX bibliography (maintained manually)
+publications.qmd         ← Publication cards with abstract toggle
+projects.qmd             ← Research project listings
+cv.qmd                   ← English CV (Quarto markdown)
+teaching.qmd             ← Teaching portfolio
+cv.pdf                   ← Pre-built downloadable CV PDF
+R/fetch_publications.R   ← One-time Google Scholar scraper
+R/fetch_abstracts.R      ← Crossref/Europe PMC abstract fetcher
 ```
 
 ## Modules
@@ -26,14 +29,16 @@ R/fetch_publications.R ← One-time Google Scholar scraper
 | # | Module | Type | Description |
 |---|--------|------|-------------|
 | 1 | Quarto Website Scaffold | Build | `_quarto.yml` + `styles.scss` — sidebar layout, al-folio theming |
-| 2 | About Page | Build | `about.qmd` — biographical text + research interests |
-| 3 | Publications Page | Build | `publications.qmd` + `publications.bib` — BibTeX-driven pub list |
+| 2 | About Page | Build | `index.qmd` — biographical text + research interests |
+| 3 | Publications Page | Build | `publications.qmd` + `publications.bib` — BibTeX-driven pub cards with abstract toggle |
 | 4 | Projects Page | Build | `projects.qmd` — four research projects |
-| 5 | CV Page | Build | `cv.qmd` — English CV with PDF download |
+| 5 | CV Page | Build | `cv.qmd` — English CV as Quarto markdown with PDF download |
 | 6 | Teaching Page | Build | `teaching.qmd` — full teaching portfolio |
+| 7 | Abstract Fetcher | Build | `R/fetch_abstracts.R` — populates abstracts from Crossref/Europe PMC APIs |
 
 All page modules depend on Module 1 (scaffold) for layout and styling.
-Modules 2–6 are independent of each other.
+Modules 2–6 are independent of each other. Module 7 feeds data into
+`publications.bib`, which Module 3 consumes at render time.
 
 ## Key Decisions
 
@@ -61,3 +66,17 @@ Modules 2–6 are independent of each other.
 6. **GitHub Pages deployment**: Quarto's `gh-pages` workflow is mature and
    well-documented. Custom domain (`arekkas.gr`) requires only a CNAME
    record and can be enabled later without code changes.
+
+7. **CV as Quarto markdown, not raw HTML**: The CV page was originally
+   written as raw indented HTML, which Pandoc interpreted as code blocks.
+   Rewritten as Quarto markdown using `styles.scss` element-based selectors
+   (heading styles, emphasis for institution names, blockquotes for
+   thesis/supervisor details). This avoids the indentation code-block trap
+   while preserving the al-folio visual identity.
+
+8. **Crossref API for abstracts**: Publication abstracts are fetched from
+   the Crossref API (DOI lookup) with Europe PMC as fallback for
+   biomedical papers. Abstracts are stored in `publications.bib` and
+   displayed via an al-folio-style "Abs" toggle badge using Bootstrap's
+   collapse component. This avoids embedding JavaScript or scraping
+   publisher pages, keeping the site static and maintainable.

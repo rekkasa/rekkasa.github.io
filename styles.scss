@@ -236,6 +236,7 @@ $headings-font-weight: 600;
 // CV section styling
 .cv-section {
   margin-bottom: 2rem;
+
   h2 {
     border-left: 4px solid $primary;
     padding-left: 0.75rem;
@@ -244,25 +245,92 @@ $headings-font-weight: 600;
     color: $primary;
     margin-top: 0;
   }
-  .cv-entry {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-  .cv-entry-title {
+
+  // Entry title: the bold text at the start of a paragraph
+  // Rendered from markdown **Title** as <strong> inside <p>
+  strong {
     font-weight: 600;
     font-size: 1rem;
   }
-  .cv-entry-meta {
-    font-size: 0.85rem;
-    color: #777;
+
+  // Institution/org meta: italic text within paragraphs
+  // Rendered from markdown *text* as <em>
+  em {
+    font-style: italic;
+    color: #555;
   }
-  .cv-entry-desc {
+
+  // Paragraphs within CV sections: body text for entries
+  p {
     font-size: 0.9rem;
-    margin-top: 0.25rem;
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+  }
+
+  // Thesis/supervisor descriptions: markdown > blockquote
+  blockquote {
+    font-size: 0.85rem;
+    margin: 0.25rem 0 1rem 0;
+    padding: 0 0 1rem 0;
+    border-left: none;
+    border-bottom: 1px solid #eee;
+
+    p {
+      margin-bottom: 0.25rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  // Last blockquote in a section gets no border-bottom
+  // (no visual separator after the last entry)
+  blockquote:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  // Numbered lists in CV (Research Programmes, Teaching, Conferences)
+  ol {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #eee;
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      // Bold text inside list items (project names, presentation type)
+      strong {
+        font-size: 0.95rem;
+      }
+
+      // Italic text inside list items (funding metadata)
+      em {
+        font-size: 0.85rem;
+        display: block;
+        margin-top: 0.1rem;
+      }
+    }
+  }
+
+  // Unordered lists (Skills section)
+  ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.9rem;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      strong {
+        font-size: 0.9rem;
+      }
+    }
   }
 }
 

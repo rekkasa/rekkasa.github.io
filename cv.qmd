@@ -9,143 +9,95 @@ title: "CV"
 </div>
 
 <div class="cv-section">
-<h2>Education</h2>
 
-<div class="cv-entry">
-  <div class="cv-entry-title">
-    PhD in Medical Informatics
-  </div>
-  <div class="cv-entry-meta">
-    Erasmus Medical Center, The Netherlands &mdash; 2017&ndash;2023
-  </div>
-  <div class="cv-entry-desc">
-    <strong>Dissertation:</strong>
-    <a href="https://pure.eur.nl/files/103693281/beyond-the-average-treatment-effect_-_652e948913b3f.pdf"
-       target="_blank" rel="noopener">
-      Beyond the average treatment effect: Risk-based approaches to
-      medical decision making
-    </a>
-    <br>
-    <strong>Supervisors:</strong> Prof. P. R. Rijnbeek,
-    Prof. E. W. Steyerberg, Assoc. Prof. D. van Klaveren
-  </div>
-</div>
+## Education
 
-<div class="cv-entry">
-  <div class="cv-entry-title">
-    M.Sc. Statistics (cum laude)
-  </div>
-  <div class="cv-entry-meta">
-    KU Leuven, Belgium &mdash; 2015&ndash;2017
-  </div>
-  <div class="cv-entry-desc">
-    <strong>Dissertation:</strong> Robust model selection for generalized
-    linear models
-    <br>
-    <strong>Supervisor:</strong> Prof. S. Van Aelst
-  </div>
-</div>
+**PhD in Medical Informatics**  
+*Erasmus Medical Center, The Netherlands* -- 2017--2023
 
-<div class="cv-entry">
-  <div class="cv-entry-title">
-    B.Sc. Mathematics
-  </div>
-  <div class="cv-entry-meta">
-    Aristotle University of Thessaloniki, Greece &mdash; 2009&ndash;2015
-  </div>
-</div>
+> **Dissertation:** [Beyond the average treatment effect: Risk-based
+> approaches to medical decision
+> making](https://pure.eur.nl/files/103693281/beyond-the-average-treatment-effect_-_652e948913b3f.pdf)
+> **Supervisors:** Prof. P. R. Rijnbeek, Prof. E. W. Steyerberg,
+> Assoc. Prof. D. van Klaveren
+
+**M.Sc. Statistics (cum laude)**  
+*KU Leuven, Belgium* -- 2015--2017
+
+> **Dissertation:** Robust model selection for generalized linear models
+> **Supervisor:** Prof. S. Van Aelst
+
+**B.Sc. Mathematics**  
+*Aristotle University of Thessaloniki, Greece* -- 2009--2015
 
 </div>
 
 <div class="cv-section">
-<h2>Research Projects</h2>
 
-<div class="cv-entry">
-  <div class="cv-entry-title">
-    <a href="https://www.ihi-synthia.eu/" target="_blank" rel="noopener">
-      SYNTHIA
-    </a>
-  </div>
-  <div class="cv-entry-meta">
-    IHI Innovative Health Initiative &mdash; 2025
-  </div>
-  <div class="cv-entry-desc">
-    Synthetic data generation framework for integrated validation of use
-    cases and AI healthcare applications.
-  </div>
-</div>
+## Work Experience
 
-<div class="cv-entry">
-  <div class="cv-entry-title">
-    <a href="https://smarthealth-edih.eu/en/homepag/" target="_blank"
-       rel="noopener">Smart Health EDIH</a>
-  </div>
-  <div class="cv-entry-meta">
-    Digital Europe Programme (DEP) &amp; ESPA 2021&ndash;2027 &mdash;
-    2024
-  </div>
-  <div class="cv-entry-desc">
-    European Digital Innovation Hub for Smart Health.
-  </div>
-</div>
-
-<div class="cv-entry">
-  <div class="cv-entry-title">
-    <a href="https://www.ehden.eu/" target="_blank" rel="noopener">
-      EHDEN
-    </a>
-  </div>
-  <div class="cv-entry-meta">
-    Innovative Medicines Initiative 2 Joint Undertaking &mdash;
-    2019&ndash;2023
-  </div>
-  <div class="cv-entry-desc">
-    European Health Data and Evidence Network. Doctoral research on
-    personalized medicine using real-world data.
-  </div>
-</div>
-
-<div class="cv-entry">
-  <div class="cv-entry-title">
-    <a href="https://www.imi.europa.eu/projects-results/project-factsheets/advance"
-       target="_blank" rel="noopener">ADVANCE</a>
-  </div>
-  <div class="cv-entry-meta">
-    IHI Innovative Health Initiative &mdash; 2016
-  </div>
-  <div class="cv-entry-desc">
-    Accelerated Development of Vaccine Benefit-risk Collaboration in
-    Europe. Internship as statistician for evaluating case-finding
-    algorithms using real-world medical data.
-  </div>
-</div>
+[INSERT WORK EXPERIENCE ENTRIES FROM quarto-cv-pdf TEMPLATE]
 
 </div>
 
 <div class="cv-section">
-<h2>Teaching</h2>
 
-<div class="cv-entry-desc">
-  See the <a href="teaching.html">Teaching</a> page for the full
-  teaching portfolio, including courses at the University of Western
-  Macedonia, NIHES, the OHDSI Symposium tutorial, and student
-  supervision.
-</div>
+## Research Programmes
+
+1. **[SYNTHIA](https://www.ihi-synthia.eu/)**  
+   *IHI Innovative Health Initiative -- 2025*  
+   Synthetic data generation framework for integrated validation of
+   use cases and AI healthcare applications.
+
+2. **[Smart Health EDIH](https://smarthealth-edih.eu/en/homepag/)**  
+   *Digital Europe Programme (DEP) & ESPA 2021--2027 -- 2024*  
+   European Digital Innovation Hub for Smart Health.
+
+3. **[EHDEN](https://www.ehden.eu/)**  
+   *Innovative Medicines Initiative 2 Joint Undertaking -- 2019--2023*  
+   European Health Data and Evidence Network. Doctoral research on
+   personalized medicine using real-world data.
+
+4. **[ADVANCE](https://www.imi.europa.eu/projects-results/project-factsheets/advance)**  
+   *IHI Innovative Health Initiative -- 2016*  
+   Accelerated Development of Vaccine Benefit-risk Collaboration in
+   Europe. Internship as statistician for evaluating case-finding
+   algorithms using real-world medical data.
 
 </div>
 
 <div class="cv-section">
-<h2>Publications</h2>
 
-<div class="cv-entry-desc">
-  See the <a href="publications.html">Publications</a> page for the full
-  list of peer-reviewed journal articles and conference contributions.
-</div>
+## Teaching
+
+1. University of Western Macedonia — Undergraduate courses in
+   Educational Research, Statistics in Educational Research, and
+   Quantitative Methods (Winter 2025--2026). See the
+   [Teaching](teaching.html) page for the full portfolio.
+
+2. [NIHES](https://www.nihes.com/) — Advanced Analysis of Prognosis
+   Studies (2018--2019), Erasmus MC, Rotterdam.
+
+3. [OHDSI Symposium Tutorial](https://www.ohdsi.org/2019-tutorial-population-level-estimation/) —
+   Population-Level Estimation (2019), North Bethesda, USA.
+
+4. Student supervision — Gidius van de Kamp, M.Sc. internship (2023):
+   [Developing an R package for performing plasmode simulations](https://healthdatascience.nl/gidius-van-de-kamp-cv).
 
 </div>
 
 <div class="cv-section">
-<h2>Conference Presentations (selected)</h2>
+
+## Publications
+
+See the [Publications](publications.html) page for the full list of
+peer-reviewed journal articles and conference contributions.
+
+</div>
+
+<div class="cv-section">
+
+## Conference Presentations (selected)
 
 <ol class="conf-list">
   <li>
@@ -273,20 +225,10 @@ title: "CV"
 </div>
 
 <div class="cv-section">
-<h2>Skills</h2>
 
-<div class="cv-entry">
-  <div class="cv-entry-title">Programming</div>
-  <div class="cv-entry-desc">
-    R (advanced), Python (intermediate)
-  </div>
-</div>
+## Skills
 
-<div class="cv-entry">
-  <div class="cv-entry-title">Languages</div>
-  <div class="cv-entry-desc">
-    English (C2 proficiency), German (B2), Greek (native)
-  </div>
-</div>
+- **Programming:** R (advanced), Python (intermediate)
+- **Languages:** English (C2 proficiency), German (B2), Greek (native)
 
 </div>
