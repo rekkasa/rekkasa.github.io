@@ -1,0 +1,292 @@
+---
+title: "CV"
+---
+
+<div class="cv-download">
+  <a href="cv.pdf" class="btn btn-primary" download>
+    <i class="fas fa-download"></i> Download CV (PDF)
+  </a>
+</div>
+
+<div class="cv-section">
+<h2>Education</h2>
+
+<div class="cv-entry">
+  <div class="cv-entry-title">
+    PhD in Medical Informatics
+  </div>
+  <div class="cv-entry-meta">
+    Erasmus Medical Center, The Netherlands &mdash; 2017&ndash;2023
+  </div>
+  <div class="cv-entry-desc">
+    <strong>Dissertation:</strong>
+    <a href="https://pure.eur.nl/files/103693281/beyond-the-average-treatment-effect_-_652e948913b3f.pdf"
+       target="_blank" rel="noopener">
+      Beyond the average treatment effect: Risk-based approaches to
+      medical decision making
+    </a>
+    <br>
+    <strong>Supervisors:</strong> Prof. P. R. Rijnbeek,
+    Prof. E. W. Steyerberg, Assoc. Prof. D. van Klaveren
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-title">
+    M.Sc. Statistics (cum laude)
+  </div>
+  <div class="cv-entry-meta">
+    KU Leuven, Belgium &mdash; 2015&ndash;2017
+  </div>
+  <div class="cv-entry-desc">
+    <strong>Dissertation:</strong> Robust model selection for generalized
+    linear models
+    <br>
+    <strong>Supervisor:</strong> Prof. S. Van Aelst
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-title">
+    B.Sc. Mathematics
+  </div>
+  <div class="cv-entry-meta">
+    Aristotle University of Thessaloniki, Greece &mdash; 2009&ndash;2015
+  </div>
+</div>
+
+</div>
+
+<div class="cv-section">
+<h2>Research Projects</h2>
+
+<div class="cv-entry">
+  <div class="cv-entry-title">
+    <a href="https://www.ihi-synthia.eu/" target="_blank" rel="noopener">
+      SYNTHIA
+    </a>
+  </div>
+  <div class="cv-entry-meta">
+    IHI Innovative Health Initiative &mdash; 2025
+  </div>
+  <div class="cv-entry-desc">
+    Synthetic data generation framework for integrated validation of use
+    cases and AI healthcare applications.
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-title">
+    <a href="https://smarthealth-edih.eu/en/homepag/" target="_blank"
+       rel="noopener">Smart Health EDIH</a>
+  </div>
+  <div class="cv-entry-meta">
+    Digital Europe Programme (DEP) &amp; ESPA 2021&ndash;2027 &mdash;
+    2024
+  </div>
+  <div class="cv-entry-desc">
+    European Digital Innovation Hub for Smart Health.
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-title">
+    <a href="https://www.ehden.eu/" target="_blank" rel="noopener">
+      EHDEN
+    </a>
+  </div>
+  <div class="cv-entry-meta">
+    Innovative Medicines Initiative 2 Joint Undertaking &mdash;
+    2019&ndash;2023
+  </div>
+  <div class="cv-entry-desc">
+    European Health Data and Evidence Network. Doctoral research on
+    personalized medicine using real-world data.
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-title">
+    <a href="https://www.imi.europa.eu/projects-results/project-factsheets/advance"
+       target="_blank" rel="noopener">ADVANCE</a>
+  </div>
+  <div class="cv-entry-meta">
+    IHI Innovative Health Initiative &mdash; 2016
+  </div>
+  <div class="cv-entry-desc">
+    Accelerated Development of Vaccine Benefit-risk Collaboration in
+    Europe. Internship as statistician for evaluating case-finding
+    algorithms using real-world medical data.
+  </div>
+</div>
+
+</div>
+
+<div class="cv-section">
+<h2>Teaching</h2>
+
+<div class="cv-entry-desc">
+  See the <a href="teaching.html">Teaching</a> page for the full
+  teaching portfolio, including courses at the University of Western
+  Macedonia, NIHES, the OHDSI Symposium tutorial, and student
+  supervision.
+</div>
+
+</div>
+
+<div class="cv-section">
+<h2>Publications</h2>
+
+<div class="cv-entry-desc">
+  See the <a href="publications.html">Publications</a> page for the full
+  list of peer-reviewed journal articles and conference contributions.
+</div>
+
+</div>
+
+<div class="cv-section">
+<h2>Conference Presentations (selected)</h2>
+
+<ol class="conf-list">
+  <li>
+    <strong>Poster:</strong> Risk Stratified Analysis of Treatment
+    Effect in Electronic Health Records.
+    Alexandros Rekkas, Peter R. Rijnbeek, Jenna Reps,
+    David Van Klaveren. First Annual European OHDSI Symposium,
+    Rotterdam, The Netherlands, March 23, 2018.
+    <a href="https://www.ohdsi-europe.org/images/symposium-2018/posters/31-Alexandros-Rekkas.pdf"
+       target="_blank" rel="noopener">[link]</a>
+  </li>
+  <li>
+    <strong>Poster:</strong> Exploring Heterogeneity of Treatment
+    Effects: Development of a New OHDSI Analytics Package and
+    Demonstration Using the Gastrointestinal Bleeding Risk of
+    Celecoxib. Alexandros Rekkas, Peter R. Rijnbeek, James Weaver,
+    Martijn Schuemie, Jenna Reps, David Van Klaveren. 2018 OHDSI
+    Symposium, North Bethesda, USA, October 12, 2018.
+    <a href="https://www.ohdsi.org/wp-content/uploads/2018/10/2018-Poster-Session-FINAL-200-black-and-white-copies-double-sided-stapled.pdf"
+       target="_blank" rel="noopener">[link]</a>
+  </li>
+  <li>
+    <strong>Poster:</strong> Development of an R Package to Explore
+    Heterogeneity of Treatment Effects: A Demonstration in Patients
+    with Hypertension. Alexandros Rekkas, David van Klaveren, Peter R.
+    Rijnbeek. Second Annual European OHDSI Symposium, Rotterdam, The
+    Netherlands, March 29, 2019.
+    <a href="https://www.ohdsi-europe.org/images/symposium-2019/posters/24_Alexandros_Rekkas.pdf"
+       target="_blank" rel="noopener">[link]</a>
+  </li>
+  <li>
+    <strong>Poster:</strong> Assessing Heterogeneity of Hypertension
+    Treatment Effects: A Risk Modeling Approach. Alexandros Rekkas,
+    David van Klaveren, Peter R. Rijnbeek. 2019 OHDSI Symposium, North
+    Bethesda, USA, September 16, 2019.
+    <a href="https://www.ohdsi.org/2019-us-symposium-showcase-39/"
+       target="_blank" rel="noopener">[link]</a>
+  </li>
+  <li>
+    <strong>Poster:</strong> Large-scale evaluation of treatment effect
+    heterogeneity in hypertension. Alexandros Rekkas, David van
+    Klaveren, Peter R. Rijnbeek. 2020 OHDSI Global Symposium, Online,
+    October 19, 2020.
+    <a href="https://www.ohdsi.org/2020-global-symposium-showcase-63/"
+       target="_blank" rel="noopener">[link]</a><br>
+    <strong class="text-primary">Recipient of 2020 Best Contribution in
+    Open-Source Analytics Development.</strong>
+    <a href="https://www.ohdsi.org/2020-global-symposium-collaborator-showcase/"
+       target="_blank" rel="noopener">[link]</a>
+  </li>
+  <li>
+    <strong>Poster:</strong> Treatment heterogeneity in comparative
+    effectiveness of teriparatide vs bisphosphonates: multi-database
+    cohort study. Alexandros Rekkas, Annika M. Jodicke, David van
+    Klaveren, Daniel Prieto-Alhambra, Peter R. Rijnbeek. 2021 OHDSI
+    Global Symposium, Online, September 14, 2021.
+    <a href="https://www.ohdsi.org/2021-global-symposium-showcase-95/"
+       target="_blank" rel="noopener">[link]</a>
+  </li>
+  <li>
+    <strong>Poster:</strong> Trends in the development and validation
+    of patient-level prediction models using electronic health record
+    data: a systematic review. Cynthia Yang, Jan A. Kors, Solomon
+    Ioannou, Luis H. John, Aniek F. Markus, Alexandros Rekkas, Maria
+    de Ridder, Tom Seinen, Ross D. Williams, Peter R. Rijnbeek. 2021
+    OHDSI Global Symposium, Online, September 14, 2021.
+    <a href="https://www.ohdsi.org/2021-global-symposium-showcase-55/"
+       target="_blank" rel="noopener">[link]</a>
+  </li>
+  <li>
+    <strong>Oral:</strong> Assessing treatment effect heterogeneity
+    using the RiskStratifiedEstimation R package. Alexandros Rekkas,
+    David van Klaveren, Peter R. Rijnbeek. Third European OHDSI
+    Symposium, Rotterdam, The Netherlands, June 24, 2022.
+    <a href="https://www.ohdsi-europe.org/images/symposium-2022/posters/arekkas_poster_-_Alexandros_Rekkas.pdf"
+       target="_blank" rel="noopener">[link]</a>
+    <a href="https://www.youtube.com/watch?v=wYgk-qn-teo"
+       target="_blank" rel="noopener">[video]</a>
+  </li>
+  <li>
+    <strong>Oral:</strong> Predicting individualized treatment effects
+    using baseline risk: A simulation study. Alexandros Rekkas, Peter R.
+    Rijnbeek, David M. Kent, Ewout W. Steyerberg, David van Klaveren.
+    43rd Annual Conference of the International Society of
+    Biostatistics, Newcastle, UK, August 21&ndash;25, 2022.
+  </li>
+  <li>
+    <strong>Oral:</strong> Treatment heterogeneity in comparative
+    effectiveness of Teriparatide versus Bisphosphonates: Multi-database
+    cohort study. Alexandros Rekkas, Annika Joedicke, David van
+    Klaveren, Daniel Prieto-Alhambra, Peter R. Rijnbeek. 38th
+    International Conference on Pharmacoepidemiology, Copenhagen,
+    Denmark, August 26&ndash;28, 2022.
+    <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/pds.5518"
+       target="_blank" rel="noopener">[link]</a>
+  </li>
+  <li>
+    <strong>Poster:</strong> A standardized framework for risk-based
+    assessment of treatment effect heterogeneity in observational
+    healthcare databases. Alexandros Rekkas, David van Klaveren,
+    Patrick B. Ryan, Ewout W. Steyerberg, David M. Kent, Peter R.
+    Rijnbeek. SMDM 18th Biennial European Conference, Berlin, Germany,
+    May 21&ndash;23, 2023.
+  </li>
+  <li>
+    <strong>Oral:</strong> Evaluation of treatment effect heterogeneity
+    in the LEGEND-Hypertension study. Alexandros Rekkas, David van
+    Klaveren, Jenna M. Reps, Peter R. Rijnbeek. Fourth European OHDSI
+    Symposium, Rotterdam, The Netherlands, July 3, 2023.
+    <a href="https://www.ohdsi-europe.org/images/symposium-2023/posters/rekkas_legend_htn_hte_poster_-_Alexandros_Rekkas.pdf"
+       target="_blank" rel="noopener">[link]</a>
+    <a href="https://www.youtube.com/watch?v=wgiIHdf5P4Y"
+       target="_blank" rel="noopener">[video]</a>
+  </li>
+  <li>
+    <strong>Poster:</strong> PlasmodeSim: R package to simulate data
+    with known treatment assignment and outcome generating processes.
+    Gidius van de Kamp, Alexandros Rekkas. Fourth European OHDSI
+    Symposium, Rotterdam, The Netherlands, July 3, 2023.
+    <a href="https://www.ohdsi-europe.org/images/symposium-2023/posters/plasmode_simulation_gvk_ar_-_Alexandros_Rekkas.pdf"
+       target="_blank" rel="noopener">[link]</a>
+  </li>
+</ol>
+
+</div>
+
+<div class="cv-section">
+<h2>Skills</h2>
+
+<div class="cv-entry">
+  <div class="cv-entry-title">Programming</div>
+  <div class="cv-entry-desc">
+    R (advanced), Python (intermediate)
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry-title">Languages</div>
+  <div class="cv-entry-desc">
+    English (C2 proficiency), German (B2), Greek (native)
+  </div>
+</div>
+
+</div>

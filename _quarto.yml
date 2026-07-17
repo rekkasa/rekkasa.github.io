@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: _site
+
+execute:
+  freeze: auto
+
+website:
+  title: "Alexandros Rekkas"
+  navbar: false
+  page-navigation: false
+  page-footer:
+    center: "© 2026 Alexandros Rekkas"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+    toc: false
+    include-before-body: _includes/sidebar.html
+    include-in-header:
+      - text: |
+          <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">

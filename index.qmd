@@ -1,0 +1,32 @@
+---
+title: "About"
+---
+
+<div class="about-intro">
+
+My name is Alexandros Rekkas. I hold a PhD in Medical Informatics from
+Erasmus University Rotterdam (Erasmus Medical Center). I am currently a
+researcher at the Institute of Applied Biosciences (INAB) at the Centre
+for Research and Technology Hellas (CERTH).
+
+My research focuses on clinical prediction modeling and the exploration
+of treatment effect heterogeneity using machine learning and causal
+inference methods. I develop and apply statistical methods to estimate
+individualized treatment effects from observational healthcare data,
+with the goal of supporting evidence-based, personalized medical
+decision-making. My work spans the design and evaluation of prognostic
+models, risk stratification tools, and open-source analytics software
+for real-world data analysis.
+
+During my PhD, I developed the RiskStratifiedEstimation R package for
+the OHDSI (Observational Health Data Sciences and Informatics)
+community, which enables standardized assessment of treatment effect
+heterogeneity across observational healthcare databases mapped to the
+OMOP Common Data Model.
+
+I have contributed to several EU-funded research projects including
+EHDEN (European Health Data and Evidence Network), SYNTHIA (synthetic
+data generation for AI in healthcare), and Smart Health EDIH (European
+Digital Innovation Hub for Smart Health).
+
+</div>

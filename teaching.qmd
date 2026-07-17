@@ -1,0 +1,62 @@
+---
+title: "Teaching"
+---
+
+<div class="teaching-entry">
+<h3>University of Western Macedonia</h3>
+<div class="teaching-meta">
+  Winter semester 2025&ndash;2026
+</div>
+<div class="teaching-desc">
+  Courses: <strong>Educational Research</strong>,
+  <strong>Statistics in Educational Research</strong>, and
+  <strong>Quantitative Methods</strong>, taught to undergraduate students
+  of the Department of Early Childhood Education, under the programme
+  <em>&ldquo;Acquisition of Academic Experience for Young PhD
+  Scientists.&rdquo;</em>
+</div>
+</div>
+
+<div class="teaching-entry">
+<h3>Netherlands Institute for Health Sciences (NIHES)</h3>
+<div class="teaching-meta">
+  Winter&ndash;Spring semester 2018&ndash;2019
+</div>
+<div class="teaching-desc">
+  Course: <strong>Advanced Analysis of Prognosis Studies</strong>,
+  Erasmus MC, Rotterdam.
+</div>
+</div>
+
+<div class="teaching-entry">
+<h3>OHDSI Symposium Tutorial</h3>
+<div class="teaching-meta">
+  September 19, 2019 &mdash; North Bethesda, USA
+</div>
+<div class="teaching-desc">
+  Tutorial on <strong>Population-Level Estimation</strong> presented at
+  the 2019 OHDSI Symposium.
+  <br>
+  <a href="https://www.ohdsi.org/2019-tutorial-population-level-estimation/"
+     target="_blank" rel="noopener">
+    <i class="fas fa-external-link-alt"></i> Tutorial details
+  </a>
+</div>
+</div>
+
+<div class="teaching-entry">
+<h3>Student Supervision</h3>
+<div class="teaching-meta">
+  2023
+</div>
+<div class="teaching-desc">
+  Supervised the M.Sc. internship of <strong>Gidius van de Kamp</strong>
+  on <em>&ldquo;Developing an R package for performing plasmode
+  simulations using data mapped to the OMOP common data model.&rdquo;</em>
+  <br>
+  <a href="https://healthdatascience.nl/gidius-van-de-kamp-cv"
+     target="_blank" rel="noopener">
+    <i class="fas fa-external-link-alt"></i> Student profile
+  </a>
+</div>
+</div>

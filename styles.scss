@@ -1,0 +1,338 @@
+/*-- scss:defaults --*/
+
+// Override Bootstrap variables for al-folio feel
+$primary: #4a6fa5;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 600;
+
+/*-- scss:rules --*/
+
+// Hide Quarto's default sidebar
+#quarto-sidebar {
+  display: none;
+}
+
+// Custom sidebar (injected via include-before-body)
+#custom-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  z-index: 1030;
+
+  a {
+    transition: color 0.2s ease;
+    &:hover {
+      color: #ffffff !important;
+    }
+  }
+
+  .sidebar-avatar img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    max-width: 180px;
+    height: auto;
+  }
+
+  .sidebar-name {
+    text-align: center;
+    margin-top: 1rem;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      strong {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .sidebar-title {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+    margin-top: 0.25rem;
+  }
+
+  .sidebar-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    a {
+      color: #bdc3c7;
+      font-size: 1.3rem;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .sidebar-nav {
+    margin-top: 1.5rem;
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      li {
+        margin-bottom: 0.5rem;
+        a {
+          color: #bdc3c7;
+          text-decoration: none;
+          font-size: 0.95rem;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Main content area
+#quarto-content {
+  margin-left: 280px;
+  padding: 2rem 3rem;
+  max-width: none;
+}
+
+// Override Quarto page width constraint
+.quarto-container {
+  max-width: none;
+}
+
+// Page footer
+.nav-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+// Publication card styling
+.pub-card {
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s ease;
+  &:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+  }
+}
+
+.pub-year {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $primary;
+  border-bottom: 2px solid $primary;
+  padding-bottom: 0.3rem;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: $primary;
+  margin-bottom: 0.3rem;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.2rem;
+}
+
+.pub-venue {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 0.3rem;
+}
+
+.pub-links {
+  margin-top: 0.5rem;
+  a.badge {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+    background-color: $primary;
+    color: #fff;
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+}
+
+.pub-abstract {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+// Project card styling
+.project-card {
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  height: 100%;
+  transition: box-shadow 0.2s ease;
+  &:hover {
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.12);
+  }
+  .project-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $primary;
+    margin-bottom: 0.5rem;
+  }
+  .project-meta {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  .project-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  a.project-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// CV section styling
+.cv-section {
+  margin-bottom: 2rem;
+  h2 {
+    border-left: 4px solid $primary;
+    padding-left: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $primary;
+    margin-top: 0;
+  }
+  .cv-entry {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .cv-entry-title {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .cv-entry-meta {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  .cv-entry-desc {
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+  }
+}
+
+.cv-download {
+  margin-bottom: 2rem;
+}
+
+// Conference list
+.conf-list {
+  list-style: none;
+  counter-reset: conf-counter;
+  padding-left: 0;
+  li {
+    counter-increment: conf-counter;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    &::before {
+      content: counter(conf-counter, lower-roman) ".";
+      font-weight: 600;
+      margin-right: 0.5rem;
+      color: $primary;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+// Teaching page
+.teaching-entry {
+  margin-bottom: 1.5rem;
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $primary;
+    margin-bottom: 0.25rem;
+  }
+  .teaching-meta {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 0.25rem;
+  }
+  .teaching-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+// About page intro
+.about-intro {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+// Responsive: stack sidebar on top for small screens
+@media (max-width: 768px) {
+  #custom-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 1rem;
+  }
+  #quarto-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  .sidebar-avatar img {
+    max-width: 120px;
+  }
+}

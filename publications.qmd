@@ -1,0 +1,172 @@
+---
+title: "Publications"
+---
+
+```{r}
+#| echo: false
+#| output: asis
+#| warning: false
+#| message: false
+#| fig.keep: none
+#| dev: ragg_png
+
+# Read bibliography
+bib <- RefManageR::ReadBib(
+  file = "publications.bib",
+  check = FALSE
+)
+
+if (length(bib) == 0) {
+  cat("<p>No publications found.</p>\n")
+  return(invisible(NULL))
+}
+
+# Helper to coerce a value to a non-empty character string
+ensure_char <- function(x) {
+  if (length(x) == 0) "" else as.character(x)
+}
+
+# Extract fields into a tibble
+n <- length(bib)
+pub_list <- vector(mode = "list", length = n)
+
+for (i in seq_len(n)) {
+  entry <- bib[i]
+  title <- ensure_char(entry$title)
+  journal <- ensure_char(entry$journal)
+  year <- ensure_char(entry$year)
+  doi <- ensure_char(entry$doi)
+  url <- ensure_char(entry$url)
+  key <- names(bib)[[i]]
+
+  # Format authors
+  authors_raw <- tryCatch(
+    expr = entry$author,
+    error = function(e) NULL
+  )
+  if (
+    length(authors_raw) > 0 &&
+    inherits(x = authors_raw, what = "person")
+  ) {
+    author_formatted <- stringr::str_c(
+      format(
+        x = authors_raw,
+        include = c("family", "given")
+      ),
+      collapse = ", "
+    )
+  } else {
+    author_formatted <- ""
+  }
+
+  pub_list[[i]] <- list(
+    key = key,
+    title = title,
+    authors = author_formatted,
+    journal = journal,
+    year = year,
+    doi = doi,
+    url = url
+  )
+}
+
+pub_tbl <- dplyr::bind_rows(pub_list) |>
+  dplyr::arrange(dplyr::desc(x = year))
+
+years <- unique(pub_tbl[["year"]])
+
+# Emit HTML for each year group
+for (yr in years) {
+  cat(
+    '<h2 class="pub-year">', yr, '</h2>\n',
+    sep = ""
+  )
+
+  yr_pubs <- dplyr::filter(
+    .data = pub_tbl,
+    year == yr
+  )
+
+  for (row_idx in seq_len(nrow(yr_pubs))) {
+    row <- yr_pubs[row_idx, ]
+
+    title_html <- if (
+      nchar(row[["doi"]]) > 0
+    ) {
+      doi_url <- stringr::str_c("https://doi.org/", row[["doi"]])
+      stringr::str_c(
+        '<a href="', doi_url, '" target="_blank" rel="noopener">',
+        htmltools::htmlEscape(text = row[["title"]]),
+        '</a>'
+      )
+    } else if (nchar(row[["url"]]) > 0) {
+      stringr::str_c(
+        '<a href="', row[["url"]], '" target="_blank" rel="noopener">',
+        htmltools::htmlEscape(text = row[["title"]]),
+        '</a>'
+      )
+    } else {
+      htmltools::htmlEscape(text = row[["title"]])
+    }
+
+    authors_html <- htmltools::htmlEscape(text = row[["authors"]])
+
+    venue_html <- stringr::str_c(
+      "<em>",
+      htmltools::htmlEscape(text = row[["journal"]]),
+      "</em>"
+    )
+
+    if (nchar(row[["year"]]) > 0) {
+      venue_html <- stringr::str_c(
+        venue_html, ", ",
+        htmltools::htmlEscape(text = row[["year"]])
+      )
+    }
+
+    # Build links
+    links_parts <- character(0)
+    if (nchar(row[["doi"]]) > 0) {
+      links_parts <- c(
+        links_parts,
+        stringr::str_c(
+          '<a class="badge" href="https://doi.org/',
+          row[["doi"]],
+          '" target="_blank" rel="noopener">DOI</a>'
+        )
+      )
+    }
+    if (nchar(row[["url"]]) > 0) {
+      links_parts <- c(
+        links_parts,
+        stringr::str_c(
+          '<a class="badge" href="',
+          row[["url"]],
+          '" target="_blank" rel="noopener">URL</a>'
+        )
+      )
+    }
+
+    links_html <- if (length(links_parts) > 0) {
+      stringr::str_c(
+        '<div class="pub-links">',
+        stringr::str_c(links_parts, collapse = " "),
+        '</div>'
+      )
+    } else {
+      ""
+    }
+
+    # Build card
+    cat(
+      '<div class="pub-card">\n',
+      '  <div class="pub-title">', title_html, '</div>\n',
+      '  <div class="pub-authors">', authors_html, '</div>\n',
+      '  <div class="pub-venue">', venue_html, '</div>\n',
+      '  ', links_html, '\n',
+      '</div>\n',
+      sep = ""
+    )
+  }
+}
+```
