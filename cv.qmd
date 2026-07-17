@@ -4,7 +4,7 @@ title: "CV"
 
 <div class="cv-download">
   <a href="cv.pdf" class="btn btn-primary" download>
-    <i class="fas fa-download"></i> Download CV (PDF)
+    <i class="bi bi-download"></i> Download CV (PDF)
   </a>
 </div>
 

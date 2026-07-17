@@ -5,84 +5,84 @@ title: "Projects"
 ::: {layout-ncol=2}
 
 <div class="project-card">
-  <div class="project-name">
-    <a href="https://www.ihi-synthia.eu/" target="_blank" rel="noopener"
-       style="color: inherit; text-decoration: none;">SYNTHIA</a>
-  </div>
-  <div class="project-desc">
-    Synthetic data generation framework for integrated validation of use
-    cases and AI healthcare applications
-  </div>
-  <div class="project-meta">
-    <strong>Funding:</strong> IHI Innovative Health Initiative<br>
-    <strong>Timeline:</strong> 2025
-  </div>
-  <a href="https://www.ihi-synthia.eu/" target="_blank" rel="noopener"
-     class="project-link">
-    <i class="fas fa-external-link-alt"></i> Visit project
-  </a>
+<div class="project-name">
+<a href="https://www.ihi-synthia.eu/" target="_blank" rel="noopener"
+style="color: inherit; text-decoration: none;">SYNTHIA</a>
+</div>
+<div class="project-desc">
+Synthetic data generation framework for integrated validation of use
+cases and AI healthcare applications
+</div>
+<div class="project-meta">
+<strong>Funding:</strong> IHI Innovative Health Initiative<br>
+<strong>Timeline:</strong> 2025
+</div>
+<a href="https://www.ihi-synthia.eu/" target="_blank" rel="noopener"
+class="project-link">
+<i class="bi bi-box-arrow-up-right"></i> Visit project
+</a>
 </div>
 
 <div class="project-card">
-  <div class="project-name">
-    <a href="https://smarthealth-edih.eu/en/homepag/" target="_blank"
-       rel="noopener" style="color: inherit; text-decoration: none;">
-      Smart Health EDIH
-    </a>
-  </div>
-  <div class="project-desc">
-    European Digital Innovation Hub for Smart Health
-  </div>
-  <div class="project-meta">
-    <strong>Funding:</strong> Digital Europe Programme (DEP) &amp; ESPA
-    2021&ndash;2027<br>
-    <strong>Timeline:</strong> 2024
-  </div>
-  <a href="https://smarthealth-edih.eu/en/homepag/" target="_blank"
-     rel="noopener" class="project-link">
-    <i class="fas fa-external-link-alt"></i> Visit project
-  </a>
+<div class="project-name">
+<a href="https://smarthealth-edih.eu/en/homepag/" target="_blank"
+rel="noopener" style="color: inherit; text-decoration: none;">
+Smart Health EDIH
+</a>
+</div>
+<div class="project-desc">
+European Digital Innovation Hub for Smart Health
+</div>
+<div class="project-meta">
+<strong>Funding:</strong> Digital Europe Programme (DEP) &amp; ESPA
+2021&ndash;2027<br>
+<strong>Timeline:</strong> 2024
+</div>
+<a href="https://smarthealth-edih.eu/en/homepag/" target="_blank"
+rel="noopener" class="project-link">
+<i class="bi bi-box-arrow-up-right"></i> Visit project
+</a>
 </div>
 
 <div class="project-card">
-  <div class="project-name">
-    <a href="https://www.ehden.eu/" target="_blank" rel="noopener"
-       style="color: inherit; text-decoration: none;">EHDEN</a>
-  </div>
-  <div class="project-desc">
-    European Health Data and Evidence Network — standardizing health data
-    to the OMOP Common Data Model and enabling large-scale observational
-    research
-  </div>
-  <div class="project-meta">
-    <strong>Funding:</strong> Innovative Medicines Initiative 2 Joint
-    Undertaking<br>
-    <strong>Timeline:</strong> 2019&ndash;2023
-  </div>
-  <a href="https://www.ehden.eu/" target="_blank" rel="noopener"
-     class="project-link">
-    <i class="fas fa-external-link-alt"></i> Visit project
-  </a>
+<div class="project-name">
+<a href="https://www.ehden.eu/" target="_blank" rel="noopener"
+style="color: inherit; text-decoration: none;">EHDEN</a>
+</div>
+<div class="project-desc">
+European Health Data and Evidence Network — standardizing health data
+to the OMOP Common Data Model and enabling large-scale observational
+research
+</div>
+<div class="project-meta">
+<strong>Funding:</strong> Innovative Medicines Initiative 2 Joint
+Undertaking<br>
+<strong>Timeline:</strong> 2019&ndash;2023
+</div>
+<a href="https://www.ehden.eu/" target="_blank" rel="noopener"
+class="project-link">
+<i class="bi bi-box-arrow-up-right"></i> Visit project
+</a>
 </div>
 
 <div class="project-card">
-  <div class="project-name">
-    <a href="https://www.imi.europa.eu/projects-results/project-factsheets/advance"
-       target="_blank" rel="noopener"
-       style="color: inherit; text-decoration: none;">ADVANCE</a>
-  </div>
-  <div class="project-desc">
-    Accelerated Development of Vaccine Benefit-risk Collaboration in
-    Europe
-  </div>
-  <div class="project-meta">
-    <strong>Funding:</strong> IHI Innovative Health Initiative<br>
-    <strong>Timeline:</strong> 2016
-  </div>
-  <a href="https://www.imi.europa.eu/projects-results/project-factsheets/advance"
-     target="_blank" rel="noopener" class="project-link">
-    <i class="fas fa-external-link-alt"></i> Visit project
-  </a>
+<div class="project-name">
+<a href="https://www.imi.europa.eu/projects-results/project-factsheets/advance"
+target="_blank" rel="noopener"
+style="color: inherit; text-decoration: none;">ADVANCE</a>
+</div>
+<div class="project-desc">
+Accelerated Development of Vaccine Benefit-risk Collaboration in
+Europe
+</div>
+<div class="project-meta">
+<strong>Funding:</strong> IHI Innovative Health Initiative<br>
+<strong>Timeline:</strong> 2016
+</div>
+<a href="https://www.imi.europa.eu/projects-results/project-factsheets/advance"
+target="_blank" rel="noopener" class="project-link">
+<i class="bi bi-box-arrow-up-right"></i> Visit project
+</a>
 </div>
 
 :::

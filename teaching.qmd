@@ -39,7 +39,7 @@ title: "Teaching"
   <br>
   <a href="https://www.ohdsi.org/2019-tutorial-population-level-estimation/"
      target="_blank" rel="noopener">
-    <i class="fas fa-external-link-alt"></i> Tutorial details
+    <i class="bi bi-box-arrow-up-right"></i> Tutorial details
   </a>
 </div>
 </div>
@@ -56,7 +56,7 @@ title: "Teaching"
   <br>
   <a href="https://healthdatascience.nl/gidius-van-de-kamp-cv"
      target="_blank" rel="noopener">
-    <i class="fas fa-external-link-alt"></i> Student profile
+    <i class="bi bi-box-arrow-up-right"></i> Student profile
   </a>
 </div>
 </div>
